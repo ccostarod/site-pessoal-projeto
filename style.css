@@ -5,6 +5,11 @@ body, header{
 
 }
 
+.link {
+    text-decoration: none;
+    color: white;
+}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -200,4 +205,8 @@ footer{
 
 .botao-1:hover{
     background-color: rgb(161, 149, 255);
+}
+
+.link:hover{
+    color: rgb(161, 149, 255);
 }
