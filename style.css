@@ -2,7 +2,6 @@
 
 body, header{
     margin: 0;
-
 }
 
 .link {
@@ -60,8 +59,9 @@ main{
 
 /*Informações de inicio:*/
 .minha-foto{
-    height: 450px;
-    border-radius: 50%;
+    border-radius: 10%;
+    height: 400px;
+    
 }
 
 .meu-nome{
