@@ -68,6 +68,8 @@ main{
 }
 
 .meu-nome{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 72px;
     margin-bottom: 0;
 }
