@@ -67,6 +67,7 @@ main{
 .meu-nome{
     font-size: 72px;
     margin-bottom: 0;
+
 }
 
 .breve-sobre{
@@ -140,8 +141,9 @@ button {
 }
 
 .img-projeto {
-    padding: 5px;
+    padding: 6px;
     border-bottom: 1px solid rgb(0, 0, 0);
+    height: 138px;
     width: 138px;
 }
 
