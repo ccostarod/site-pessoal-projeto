@@ -84,7 +84,17 @@
             </div>
 
         </main>
+        <div id="aviso">
+            <p>Este site está disponível apenas em computadores por enquanto.</p>
+        </div> 
         
+        <script>
+            // JavaScript para exibir a mensagem de aviso em dispositivos móveis
+            if (window.innerWidth < 1024) {
+                var aviso = document.getElementById('aviso');
+                aviso.style.display = 'block';
+            }
+        </script>
         <footer>
             <p>Copyright © Rodrigo Costa, 2023</p>
         </footer>
