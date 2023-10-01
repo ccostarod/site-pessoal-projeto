@@ -231,3 +231,17 @@ footer{
     text-align: center;
     padding: 20px;
 }
+@media screen and (max-width: 768px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    /* Ocultar todo o conteúdo, exceto a mensagem de aviso */
+    footer {
+        display: none;
+    }
+    /* Exibir apenas a mensagem de aviso */
+    #aviso {
+        display: block;
+    }
+}

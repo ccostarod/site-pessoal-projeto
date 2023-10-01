@@ -85,14 +85,24 @@
 
         </main>
         <div id="aviso">
-            <p>Este site está disponível apenas em computadores por enquanto.</p>
+            <p>Este site está disponível apenas em computadores por enquanto. Exiba em tela cheia!</p>
         </div> 
         
         <script>
             // JavaScript para exibir a mensagem de aviso em dispositivos móveis
-            if (window.innerWidth < 1024) {
-                var aviso = document.getElementById('aviso');
-                aviso.style.display = 'block';
+            if (window.innerWidth < 768) {
+            var aviso = document.getElementById('aviso');
+            aviso.style.display = 'block';
+            var conteudos = [
+                document.querySelector('.background-1'),
+                document.querySelector('.projetos'),
+                document.querySelector('.sobre'),
+                document.querySelector('.final'),
+                document.querySelector('footer')
+            ];
+            conteudos.forEach(conteudo => {
+                conteudo.style.display = 'none';
+            })
             }
         </script>
         <footer>
@@ -100,5 +110,4 @@
         </footer>
         
 </body>
-
 </html>
