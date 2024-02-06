@@ -8,8 +8,24 @@ body, header{
 }
 
 .link {
+    position: relative;
     text-decoration: none;
     color: white;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: crimson;
+    transition: width 0.3s ease, left 0.3s ease;
+    
+}
+.link:hover::after{
+    width: 100%;
+    left: 0;
 }
 
 header{
@@ -62,9 +78,15 @@ main{
 
 /*Informações de inicio:*/
 .minha-foto{
+    position: relative;
     border-radius: 10%;
     height: 400px;
     
+}
+
+
+.minha-foto::after{
+    filter: blur(50px);
 }
 
 .meu-nome{
@@ -121,12 +143,10 @@ button {
     align-items: center;
     text-align: center;
     border: 5px solid black;
-    background-color: rgb(161, 149, 255);
+    background-color: #E5E7EB;
 }
 
-.titulo-projetos{
-    border-bottom: 1px solid rgb(0, 0, 0)
-}
+
 
 
 .titulo-projetos, .texto-projetos {
@@ -160,6 +180,7 @@ div.sobre{
     align-items: center;
     text-align:justify;
     padding: 52px;
+    gap: 80px;
 }
 
 .texto-sobre{
@@ -212,10 +233,6 @@ footer{
 
 .botao-1:hover{
     background-color: rgb(161, 149, 255);
-}
-
-.link:hover{
-    color: rgb(161, 149, 255);
 }
 
 #aviso {
